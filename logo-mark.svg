@@ -1,0 +1,7 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Marigold Sip Co. cup mark">
+  <path d="M14 20h34l-3.2 27.5A6 6 0 0 1 38.85 53H23.15a6 6 0 0 1-5.95-5.5L14 20z" fill="#F4C44C"/>
+  <path d="M17 26h28l-2.1 20.9A4 4 0 0 1 38.9 50h-15.8a4 4 0 0 1-4-3.6L17 26z" fill="#E3A91F"/>
+  <path d="M46 22c5 0 8 3.3 8 7.4 0 5.3-4.7 8.6-11 8.9l-.6-4.2c3.9-.3 6.7-2 6.7-4.6 0-2-1.6-3.4-4.2-3.4l1.1-4.1z" fill="#F4C44C"/>
+  <rect x="27" y="8" width="3.2" height="14" rx="1.6" fill="#8CA37E" transform="rotate(-8 27 8)"/>
+  <path d="M12 20h36a1.6 1.6 0 0 1 0 3.2H12a1.6 1.6 0 1 1 0-3.2z" fill="#2E2015"/>
+</svg>
