@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signature Drinks Menu — Marigold Sip Co.</title>
+<meta name="description" content="Browse Marigold Sip Co.'s full signature drink menu — coffee, tea, cream soda and seasonal specialty beverages, made fresh to order.">
+<meta name="theme-color" content="#F4C44C">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="canonical" href="signature-drinks.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/logo-mark.svg" alt="" width="40" height="40"></span>
+      <span>Marigold<br><small>Sip Co.</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="signature-drinks.html" class="active">Signature Drinks</a>
+      <a href="build-your-own.html">Build Your Own</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="build-your-own.html" class="btn btn-outline btn-sm">Build a Drink</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="index.html">Home</a>
+  <a href="signature-drinks.html">Signature Drinks</a>
+  <a href="build-your-own.html">Build Your Own</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="build-your-own.html" class="btn btn-accent">Build a Drink</a>
+</nav>
+
+<main id="main">
+
+  <section class="page-hero container">
+    <p class="crumb"><a href="index.html">Home</a> / Signature Drinks</p>
+    <div class="stack reveal">
+      <span class="eyebrow">The full menu</span>
+      <h1>Eight drinks, zero filler.</h1>
+      <p class="lede">Every signature pour is built from scratch daily — real fruit, house syrups, and coffee we roast relationships with. Can't find your exact match? <a href="build-your-own.html" style="text-decoration:underline;color:var(--peach-deep);">Build it yourself.</a></p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container">
+      <div class="filter-bar reveal" id="filterBar">
+        <button class="filter-chip is-active" data-filter="all">All Drinks</button>
+        <button class="filter-chip" data-filter="coffee">Coffee & Espresso</button>
+        <button class="filter-chip" data-filter="tea">Tea & Botanical</button>
+        <button class="filter-chip" data-filter="fizz">Cream Soda & Fizz</button>
+        <button class="filter-chip" data-filter="seasonal">Seasonal</button>
+      </div>
+
+      <div class="grid-cards" id="menuGrid">
+
+        <article class="drink-card reveal" data-cat="coffee">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#FBE6A6,#F4C44C);">
+            <span class="drink-tag">Coffee</span>
+            <img src="images/drink-golden-hour.svg" alt="Golden Hour Latte">
+          </div>
+          <div class="drink-name"><h3>Golden Hour Latte</h3><span class="price">$5.75</span></div>
+          <p>Brown sugar oat milk latte, double espresso, a whisper of cinnamon.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill warm">Caffeinated</span><span class="pill">Oat Milk</span></div>
+          </div>
+        </article>
+
+        <article class="drink-card reveal reveal-delay-1" data-cat="fizz">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#F8D9BF,#F3A876);">
+            <span class="drink-tag">Fizz</span>
+            <img src="images/drink-peach-fizz.svg" alt="Peach Blossom Fizz">
+          </div>
+          <div class="drink-name"><h3>Peach Blossom Fizz</h3><span class="price">$5.25</span></div>
+          <p>Peach, hibiscus and mint over sparkling water — bright and floral.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill cool">Caffeine-Free</span><span class="pill">Sparkling</span></div>
+          </div>
+        </article>
+
+        <article class="drink-card reveal reveal-delay-2" data-cat="tea">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#DCE6D3,#8CA37E);">
+            <span class="drink-tag">Tea</span>
+            <img src="images/drink-sage-honey.svg" alt="Sage and Honey Cream">
+          </div>
+          <div class="drink-name"><h3>Sage & Honey Cream</h3><span class="price">$5.95</span></div>
+          <p>Ceremonial matcha, sage-infused honey, whipped oat cream.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill">Oat Milk</span><span class="pill warm">Low Sugar</span></div>
+          </div>
+        </article>
+
+        <article class="drink-card reveal reveal-delay-3" data-cat="seasonal">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#F1D48C,#D9A94A);">
+            <span class="drink-tag">Seasonal</span>
+            <img src="images/drink-butterscotch.svg" alt="Butterscotch Cloud">
+          </div>
+          <div class="drink-name"><h3>Butterscotch Cloud</h3><span class="price">$6.25</span></div>
+          <p>Brown butter caramel cold brew crowned with vanilla cold foam.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill warm">Caffeinated</span><span class="pill">Cold Foam</span></div>
+          </div>
+        </article>
+
+        <article class="drink-card reveal" data-cat="coffee">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#8A5E43,#5A3D2B);">
+            <span class="drink-tag">Coffee</span>
+            <img src="images/drink-chocolate-barrel.svg" alt="Chocolate Barrel Brew">
+          </div>
+          <div class="drink-name"><h3>Chocolate Barrel Brew</h3><span class="price">$5.75</span></div>
+          <p>Dark chocolate, brown butter and espresso over oat milk.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill warm">Caffeinated</span><span class="pill">Rich & Dark</span></div>
+          </div>
+        </article>
+
+        <article class="drink-card reveal reveal-delay-1" data-cat="fizz">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#FBE1CC,#F3C1A0);">
+            <span class="drink-tag">Fizz</span>
+            <img src="images/drink-cream-soda.svg" alt="Cream Soda Sunrise">
+          </div>
+          <div class="drink-name"><h3>Cream Soda Sunrise</h3><span class="price">$5.50</span></div>
+          <p>Vanilla cream soda, orange and a house grenadine swirl.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill cool">Caffeine-Free</span><span class="pill">Kid Favorite</span></div>
+          </div>
+        </article>
+
+        <article class="drink-card reveal reveal-delay-2" data-cat="tea">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#E6C9A3,#C69A6B);">
+            <span class="drink-tag">Tea</span>
+            <img src="images/drink-coconut-chai.svg" alt="Toasted Coconut Chai">
+          </div>
+          <div class="drink-name"><h3>Toasted Coconut Chai</h3><span class="price">$5.85</span></div>
+          <p>Slow-steeped chai, toasted coconut and oat milk, lightly spiced.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill">Oat Milk</span><span class="pill">Spiced</span></div>
+          </div>
+        </article>
+
+        <article class="drink-card reveal reveal-delay-3" data-cat="seasonal">
+          <div class="drink-thumb" style="background:linear-gradient(160deg,#F4C44C,#E3A91F);">
+            <span class="drink-tag">Mocktail</span>
+            <img src="images/drink-marigold-mule.svg" alt="Marigold Mule">
+          </div>
+          <div class="drink-name"><h3>Marigold Mule</h3><span class="price">$5.95</span></div>
+          <p>Ginger, lime and peach topped with ginger beer — our bestselling mocktail.</p>
+          <div class="drink-foot">
+            <div class="pill-list"><span class="pill cool">Caffeine-Free</span><span class="pill warm">Bestseller</span></div>
+          </div>
+        </article>
+
+      </div>
+      <p id="emptyState" style="display:none;text-align:center;color:var(--sage-deep);font-weight:700;padding:2rem 0;">No drinks in this category yet — check back soon!</p>
+    </div>
+  </section>
+
+  <section class="section section-alt" style="padding-top:0;">
+    <div class="container">
+      <div class="cta-band reveal">
+        <div class="cta-band-copy">
+          <h2>Not quite it? <span class="italic-swash" style="color:var(--butter);">Build your own.</span></h2>
+          <p class="lede">Start from any base and layer on the flavors, milk and toppings you actually want.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="build-your-own.html" class="btn btn-accent">Open the Builder</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="color:var(--cream);">
+          <span class="brand-mark"><img src="images/logo-mark.svg" alt="" width="40" height="40"></span>
+          <span>Marigold<br><small style="color:var(--butter);">Sip Co.</small></span>
+        </a>
+        <p>Small-batch signature drinks and a build-your-own bar in the heart of Portland. Every cup made to order.</p>
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/social-instagram.svg" alt="" width="18" height="18"></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/social-tiktok.svg" alt="" width="18" height="18"></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/social-facebook.svg" alt="" width="18" height="18"></a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest"><img src="images/social-pinterest.svg" alt="" width="18" height="18"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signature-drinks.html">Signature Drinks</a></li>
+          <li><a href="build-your-own.html">Build Your Own</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+          <li><a href="contact.html#catering">Catering & Events</a></li>
+          <li><a href="contact.html#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li>214 Marigold Lane<br>Portland, OR 97209</li>
+          <li>Mon–Fri · 7am–7pm</li>
+          <li>Sat–Sun · 8am–7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Marigold Sip Co. All rights reserved.</span>
+      <span><a href="contact.html">Privacy</a> · <a href="contact.html">Terms</a> · Built with care in Portland.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="js/main.js"></script>
+</body>
+</html>

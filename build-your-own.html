@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Build Your Own Drink — Marigold Sip Co.</title>
+<meta name="description" content="Design your own custom beverage at Marigold Sip Co. Choose your base, flavor, sweetness, milk, size and toppings with a live preview, then send your order to the counter.">
+<meta name="theme-color" content="#F4C44C">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="canonical" href="build-your-own.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/logo-mark.svg" alt="" width="40" height="40"></span>
+      <span>Marigold<br><small>Sip Co.</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="signature-drinks.html">Signature Drinks</a>
+      <a href="build-your-own.html" class="active">Build Your Own</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="contact.html" class="btn btn-outline btn-sm">Order for a Group</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="index.html">Home</a>
+  <a href="signature-drinks.html">Signature Drinks</a>
+  <a href="build-your-own.html">Build Your Own</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="contact.html" class="btn btn-accent">Order for a Group</a>
+</nav>
+
+<main id="main">
+
+  <section class="page-hero container">
+    <p class="crumb"><a href="index.html">Home</a> / Build Your Own</p>
+    <div class="stack reveal">
+      <span class="eyebrow">The drink builder</span>
+      <h1>Design your cup, step by step.</h1>
+      <p class="lede">Six choices, one perfect drink. Watch the cup on the right update as you go, then send your order straight to the counter.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;">
+    <div class="container builder-layout">
+
+      <!-- ============ STEPS ============ -->
+      <div class="builder-steps">
+
+        <!-- STEP 1: BASE -->
+        <div class="builder-card reveal">
+          <div class="builder-card-head">
+            <span class="step-num">1</span>
+            <h3>Choose your base</h3>
+            <span class="opt-summary" id="summaryBase">Espresso</span>
+          </div>
+          <div class="option-grid" id="optBase" role="radiogroup" aria-label="Base">
+            <button class="option-tile is-selected" data-group="base" data-value="Espresso" data-price="0" data-color="#5A3D2B">
+              <span class="swatch" style="background:#5A3D2B;"></span><span class="opt-name">Espresso</span><span class="opt-meta">+$0.00</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="base" data-value="Black Tea" data-price="0" data-color="#8A5E43">
+              <span class="swatch" style="background:#8A5E43;"></span><span class="opt-name">Black Tea</span><span class="opt-meta">+$0.00</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="base" data-value="Green Tea" data-price="0" data-color="#8CA37E">
+              <span class="swatch" style="background:#8CA37E;"></span><span class="opt-name">Green Tea</span><span class="opt-meta">+$0.00</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="base" data-value="Oat Milk Steamer" data-price="0.5" data-color="#F1D48C">
+              <span class="swatch" style="background:#F1D48C;"></span><span class="opt-name">Oat Steamer</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="base" data-value="Sparkling Soda" data-price="0" data-color="#F3C1A0">
+              <span class="swatch" style="background:#F3C1A0;"></span><span class="opt-name">Sparkling Soda</span><span class="opt-meta">+$0.00</span><span class="check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 2: FLAVOR -->
+        <div class="builder-card reveal reveal-delay-1">
+          <div class="builder-card-head">
+            <span class="step-num">2</span>
+            <h3>Pick a flavor</h3>
+            <span class="opt-summary" id="summaryFlavor">Brown Sugar</span>
+          </div>
+          <div class="option-grid" id="optFlavor" role="radiogroup" aria-label="Flavor">
+            <button class="option-tile" data-group="flavor" data-value="Vanilla" data-price="0.5" data-color="#F1D48C">
+              <span class="swatch" style="background:#F1D48C;"></span><span class="opt-name">Vanilla</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile is-selected" data-group="flavor" data-value="Brown Sugar" data-price="0.5" data-color="#C98A4B">
+              <span class="swatch" style="background:#C98A4B;"></span><span class="opt-name">Brown Sugar</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="flavor" data-value="Peach" data-price="0.6" data-color="#F3A876">
+              <span class="swatch" style="background:#F3A876;"></span><span class="opt-name">Peach</span><span class="opt-meta">+$0.60</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="flavor" data-value="Honey Sage" data-price="0.6" data-color="#B7C7AA">
+              <span class="swatch" style="background:#B7C7AA;"></span><span class="opt-name">Honey Sage</span><span class="opt-meta">+$0.60</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="flavor" data-value="Chocolate" data-price="0.7" data-color="#5A3D2B">
+              <span class="swatch" style="background:#5A3D2B;"></span><span class="opt-name">Chocolate</span><span class="opt-meta">+$0.70</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="flavor" data-value="Caramel" data-price="0.6" data-color="#D9A94A">
+              <span class="swatch" style="background:#D9A94A;"></span><span class="opt-name">Caramel</span><span class="opt-meta">+$0.60</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="flavor" data-value="Coconut" data-price="0.5" data-color="#E6C9A3">
+              <span class="swatch" style="background:#E6C9A3;"></span><span class="opt-name">Coconut</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="flavor" data-value="Ginger" data-price="0.5" data-color="#E3A91F">
+              <span class="swatch" style="background:#E3A91F;"></span><span class="opt-name">Ginger</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 3: SWEETNESS -->
+        <div class="builder-card reveal reveal-delay-2">
+          <div class="builder-card-head">
+            <span class="step-num">3</span>
+            <h3>Set your sweetness</h3>
+            <span class="opt-summary" id="summarySweet">50%</span>
+          </div>
+          <div class="slider-wrap">
+            <div class="slider-labels"><span>Unsweet</span><span>Light</span><span>Classic</span><span>Sweet</span><span>Extra</span></div>
+            <input type="range" id="sweetnessSlider" min="0" max="100" step="25" value="50" aria-label="Sweetness level">
+          </div>
+        </div>
+
+        <!-- STEP 4: MILK -->
+        <div class="builder-card reveal reveal-delay-3">
+          <div class="builder-card-head">
+            <span class="step-num">4</span>
+            <h3>Choose milk or cream</h3>
+            <span class="opt-summary" id="summaryMilk">Whole Milk</span>
+          </div>
+          <div class="option-grid" id="optMilk" role="radiogroup" aria-label="Milk">
+            <button class="option-tile is-selected" data-group="milk" data-value="Whole Milk" data-price="0">
+              <span class="opt-name">Whole Milk</span><span class="opt-meta">+$0.00</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="milk" data-value="Oat Milk" data-price="0.6">
+              <span class="opt-name">Oat Milk</span><span class="opt-meta">+$0.60</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="milk" data-value="Almond Milk" data-price="0.6">
+              <span class="opt-name">Almond Milk</span><span class="opt-meta">+$0.60</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="milk" data-value="Coconut Milk" data-price="0.6">
+              <span class="opt-name">Coconut Milk</span><span class="opt-meta">+$0.60</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="milk" data-value="No Milk" data-price="0">
+              <span class="opt-name">No Milk</span><span class="opt-meta">+$0.00</span><span class="check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 5: SIZE -->
+        <div class="builder-card reveal">
+          <div class="builder-card-head">
+            <span class="step-num">5</span>
+            <h3>Pick your size</h3>
+            <span class="opt-summary" id="summarySize">16 oz</span>
+          </div>
+          <div class="size-row" id="optSize" role="radiogroup" aria-label="Size">
+            <button class="option-tile" data-group="size" data-value="12 oz" data-price="-0.5" data-scale="0.85">
+              <span class="opt-name">12 oz</span><span class="opt-meta">−$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile is-selected" data-group="size" data-value="16 oz" data-price="0" data-scale="1">
+              <span class="opt-name">16 oz</span><span class="opt-meta">Standard</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="size" data-value="20 oz" data-price="0.75" data-scale="1.12">
+              <span class="opt-name">20 oz</span><span class="opt-meta">+$0.75</span><span class="check">✓</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- STEP 6: TOPPINGS -->
+        <div class="builder-card reveal reveal-delay-1">
+          <div class="builder-card-head">
+            <span class="step-num">6</span>
+            <h3>Add toppings</h3>
+            <span class="opt-summary" id="summaryToppingsCount">0 selected</span>
+          </div>
+          <p class="multi-select-hint">Choose as many as you like.</p>
+          <div class="option-grid" id="optToppings">
+            <button class="option-tile" data-group="topping" data-value="Cold Foam" data-price="0.75">
+              <span class="opt-name">Cold Foam</span><span class="opt-meta">+$0.75</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="topping" data-value="Boba Pearls" data-price="0.75">
+              <span class="opt-name">Boba Pearls</span><span class="opt-meta">+$0.75</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="topping" data-value="Toasted Coconut" data-price="0.5">
+              <span class="opt-name">Toasted Coconut</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="topping" data-value="Cinnamon Dust" data-price="0.25">
+              <span class="opt-name">Cinnamon Dust</span><span class="opt-meta">+$0.25</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="topping" data-value="Whipped Cream" data-price="0.5">
+              <span class="opt-name">Whipped Cream</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="topping" data-value="Caramel Drizzle" data-price="0.5">
+              <span class="opt-name">Caramel Drizzle</span><span class="opt-meta">+$0.50</span><span class="check">✓</span>
+            </button>
+            <button class="option-tile" data-group="topping" data-value="Extra Espresso Shot" data-price="1">
+              <span class="opt-name">Extra Shot</span><span class="opt-meta">+$1.00</span><span class="check">✓</span>
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ============ LIVE PREVIEW ============ -->
+      <aside class="preview-panel reveal reveal-delay-2" aria-live="polite">
+        <div class="stack-tight">
+          <span class="eyebrow">Live preview</span>
+          <h3>Your custom cup</h3>
+        </div>
+
+        <div class="preview-cup-wrap">
+          <svg id="cupScaleGroupSvg" viewBox="0 0 200 240" style="transition:transform .4s cubic-bezier(.22,.9,.28,1);">
+            <defs>
+              <clipPath id="cupClip">
+                <path d="M27 42h66l-6 66.4A7.4 7.4 0 0 1 79.65 115H40.35a7.4 7.4 0 0 1-7.35-6.6L27 42z"/>
+              </clipPath>
+            </defs>
+            <!-- cup body -->
+            <path d="M22 34h76l-7 82.6A11 11 0 0 1 80.06 126H39.94a11 11 0 0 1-10.94-9.4L22 34z" fill="#FFFDF8"/>
+            <!-- liquid, clipped -->
+            <g clip-path="url(#cupClip)">
+              <rect id="previewLiquid" x="27" y="42" width="66" height="74" fill="#C98A4B"/>
+              <!-- cold foam layer -->
+              <rect id="previewFoam" x="27" y="42" width="66" height="14" fill="#FFFDF8" opacity="0" />
+              <!-- boba pearls -->
+              <g id="previewBoba" opacity="0">
+                <circle cx="38" cy="106" r="4.2" fill="#2E2015"/>
+                <circle cx="50" cy="110" r="4.2" fill="#2E2015"/>
+                <circle cx="62" cy="105" r="4.2" fill="#2E2015"/>
+                <circle cx="74" cy="109" r="4.2" fill="#2E2015"/>
+                <circle cx="84" cy="104" r="4.2" fill="#2E2015"/>
+              </g>
+              <!-- toasted coconut -->
+              <g id="previewCoconut" opacity="0">
+                <circle cx="42" cy="48" r="2" fill="#FFFDF8"/>
+                <circle cx="55" cy="45" r="2" fill="#FFFDF8"/>
+                <circle cx="68" cy="49" r="2" fill="#FFFDF8"/>
+                <circle cx="80" cy="46" r="2" fill="#FFFDF8"/>
+              </g>
+              <!-- cinnamon dust -->
+              <g id="previewCinnamon" opacity="0">
+                <circle cx="45" cy="47" r="1.2" fill="#8A5E43"/>
+                <circle cx="58" cy="44" r="1.2" fill="#8A5E43"/>
+                <circle cx="70" cy="48" r="1.2" fill="#8A5E43"/>
+                <circle cx="82" cy="45" r="1.2" fill="#8A5E43"/>
+                <circle cx="36" cy="45" r="1.2" fill="#8A5E43"/>
+              </g>
+            </g>
+            <!-- whipped cream swirl (sits above cup rim) -->
+            <g id="previewWhip" opacity="0">
+              <ellipse cx="60" cy="40" rx="22" ry="9" fill="#FFFDF8"/>
+              <ellipse cx="60" cy="33" rx="15" ry="7" fill="#FFFDF8"/>
+              <ellipse cx="60" cy="27" rx="8" ry="5" fill="#FFFDF8"/>
+            </g>
+            <!-- caramel drizzle -->
+            <path id="previewDrizzle" opacity="0" d="M40 34c4 3 2 6 6 7s3-5 7-4 1 6 6 6 3-6 8-5 2 6 7 5" stroke="#C98A4B" stroke-width="2" fill="none" stroke-linecap="round"/>
+            <!-- lid rim -->
+            <rect x="18" y="30" width="84" height="6" rx="3" fill="#2E2015"/>
+            <!-- straw -->
+            <rect x="66" y="4" width="6" height="30" rx="3" fill="#8CA37E" transform="rotate(8 69 19)"/>
+          </svg>
+        </div>
+
+        <div class="preview-summary">
+          <div class="row"><span>Base</span><span id="rowBase">Espresso</span></div>
+          <div class="row"><span>Flavor</span><span id="rowFlavor">Brown Sugar</span></div>
+          <div class="row"><span>Sweetness</span><span id="rowSweet">50%</span></div>
+          <div class="row"><span>Milk</span><span id="rowMilk">Whole Milk</span></div>
+          <div class="row"><span>Size</span><span id="rowSize">16 oz</span></div>
+          <div class="row"><span>Toppings</span><span id="rowToppings">None yet</span></div>
+        </div>
+
+        <div class="preview-price">
+          <div><strong id="previewTotal">$5.50</strong><br><span>total, before tax</span></div>
+        </div>
+
+        <button class="btn btn-primary btn-block" id="addToOrderBtn" type="button">Add to Order →</button>
+        <a class="btn btn-outline btn-block" id="emailOrderBtn" href="#">Email This Order to Us</a>
+      </aside>
+
+    </div>
+  </section>
+
+  <!-- ORDER SUMMARY -->
+  <section class="section section-alt" id="orderSummarySection" style="display:none;">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="stack">
+          <span class="eyebrow">Your order</span>
+          <h2>Ready when you are</h2>
+        </div>
+        <button class="btn btn-ghost btn-sm" id="clearOrderBtn">Clear order</button>
+      </div>
+      <div id="orderList" style="display:flex;flex-direction:column;gap:0.8rem;max-width:720px;"></div>
+      <div style="display:flex;justify-content:space-between;align-items:center;max-width:720px;margin-top:1.4rem;padding-top:1.2rem;border-top:1px dashed var(--cream-line);">
+        <strong style="font-family:var(--font-display);font-size:1.3rem;">Order total: <span id="orderGrandTotal">$0.00</span></strong>
+        <a href="contact.html" class="btn btn-accent">Send to Counter →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="stack">
+          <span class="eyebrow">How it works</span>
+          <h2>From cup to counter in three steps</h2>
+        </div>
+      </div>
+      <div class="value-grid">
+        <div class="value-card reveal">
+          <div class="icon-wrap"><img src="images/icon-custom.svg" alt="" width="26" height="26"></div>
+          <h3>1. Design it</h3>
+          <p>Use the builder above — every choice updates your live cup and running total instantly.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-1">
+          <div class="icon-wrap"><img src="images/icon-timer.svg" alt="" width="26" height="26"></div>
+          <h3>2. Add to order</h3>
+          <p>Queue up as many custom drinks as you need — great for group and office orders.</p>
+        </div>
+        <div class="value-card reveal reveal-delay-2">
+          <div class="icon-wrap"><img src="images/icon-craft.svg" alt="" width="26" height="26"></div>
+          <h3>3. Send it over</h3>
+          <p>Email your order to the counter or bring it up on your phone when you arrive.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="color:var(--cream);">
+          <span class="brand-mark"><img src="images/logo-mark.svg" alt="" width="40" height="40"></span>
+          <span>Marigold<br><small style="color:var(--butter);">Sip Co.</small></span>
+        </a>
+        <p>Small-batch signature drinks and a build-your-own bar in the heart of Portland. Every cup made to order.</p>
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/social-instagram.svg" alt="" width="18" height="18"></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/social-tiktok.svg" alt="" width="18" height="18"></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/social-facebook.svg" alt="" width="18" height="18"></a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest"><img src="images/social-pinterest.svg" alt="" width="18" height="18"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signature-drinks.html">Signature Drinks</a></li>
+          <li><a href="build-your-own.html">Build Your Own</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+          <li><a href="contact.html#catering">Catering & Events</a></li>
+          <li><a href="contact.html#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li>214 Marigold Lane<br>Portland, OR 97209</li>
+          <li>Mon–Fri · 7am–7pm</li>
+          <li>Sat–Sun · 8am–7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Marigold Sip Co. All rights reserved.</span>
+      <span><a href="contact.html">Privacy</a> · <a href="contact.html">Terms</a> · Built with care in Portland.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="js/main.js"></script>
+<script src="js/builder.js"></script>
+</body>
+</html>

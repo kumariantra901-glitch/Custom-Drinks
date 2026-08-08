@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us — Marigold Sip Co.</title>
+<meta name="description" content="Get in touch with Marigold Sip Co. — visit us on Marigold Lane, ask a question, or request catering for your next event.">
+<meta name="theme-color" content="#F4C44C">
+<link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+<link rel="canonical" href="contact.html">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><img src="images/logo-mark.svg" alt="" width="40" height="40"></span>
+      <span>Marigold<br><small>Sip Co.</small></span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="signature-drinks.html">Signature Drinks</a>
+      <a href="build-your-own.html">Build Your Own</a>
+      <a href="about.html">About</a>
+      <a href="contact.html" class="active">Contact</a>
+    </nav>
+    <div class="header-cta">
+      <a href="build-your-own.html" class="btn btn-outline btn-sm">Build a Drink</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav"><span></span></button>
+    </div>
+  </div>
+</header>
+
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="index.html">Home</a>
+  <a href="signature-drinks.html">Signature Drinks</a>
+  <a href="build-your-own.html">Build Your Own</a>
+  <a href="about.html">About</a>
+  <a href="contact.html">Contact</a>
+  <a href="build-your-own.html" class="btn btn-accent">Build a Drink</a>
+</nav>
+
+<main id="main">
+
+  <section class="page-hero container">
+    <p class="crumb"><a href="index.html">Home</a> / Contact</p>
+    <div class="stack reveal">
+      <span class="eyebrow">We'd love to hear from you</span>
+      <h1>Questions, catering, or just say hi.</h1>
+      <p class="lede">Stop by Marigold Lane, drop us a line below, or email us directly — we read every message ourselves.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:1rem;" id="catering">
+    <div class="container contact-layout">
+
+      <aside class="contact-info-card reveal">
+        <div class="contact-info-row">
+          <span class="icon-wrap"><img src="images/icon-pin.svg" alt="" width="20" height="20"></span>
+          <div><h4>Visit</h4><p>214 Marigold Lane<br>Portland, OR 97209</p></div>
+        </div>
+        <div class="contact-info-row">
+          <span class="icon-wrap"><img src="images/icon-phone.svg" alt="" width="20" height="20"></span>
+          <div><h4>Call</h4><p><a href="tel:+15035550148">(503) 555-0148</a></p></div>
+        </div>
+        <div class="contact-info-row">
+          <span class="icon-wrap"><img src="images/icon-mail.svg" alt="" width="20" height="20"></span>
+          <div><h4>Email</h4><p><a href="mailto:hello@marigoldsipco.example">hello@marigoldsipco.example</a></p></div>
+        </div>
+        <div class="contact-info-row">
+          <span class="icon-wrap"><img src="images/icon-clock.svg" alt="" width="20" height="20"></span>
+          <div style="width:100%;">
+            <h4>Hours</h4>
+            <ul class="hours-list">
+              <li><span>Mon – Fri</span><span>7:00am – 7:00pm</span></li>
+              <li><span>Saturday</span><span>8:00am – 7:00pm</span></li>
+              <li><span>Sunday</span><span>8:00am – 6:00pm</span></li>
+            </ul>
+          </div>
+        </div>
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/social-instagram.svg" alt="" width="18" height="18"></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/social-tiktok.svg" alt="" width="18" height="18"></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/social-facebook.svg" alt="" width="18" height="18"></a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest"><img src="images/social-pinterest.svg" alt="" width="18" height="18"></a>
+        </div>
+      </aside>
+
+      <div class="contact-form-card reveal reveal-delay-1">
+        <h3 style="margin-bottom:0.4rem;">Send us a message</h3>
+        <p style="color:var(--brown);font-size:0.92rem;margin-bottom:1.6rem;">Fields marked * are required. We typically reply within one business day.</p>
+
+        <form id="contactForm" novalidate>
+          <div class="form-cols">
+            <div class="form-row" id="fieldName">
+              <label for="cName">Name *</label>
+              <input type="text" id="cName" name="name" placeholder="Your full name" required>
+              <span class="form-error"></span>
+            </div>
+            <div class="form-row" id="fieldEmail">
+              <label for="cEmail">Email *</label>
+              <input type="email" id="cEmail" name="email" placeholder="you@email.com" required>
+              <span class="form-error"></span>
+            </div>
+          </div>
+          <div class="form-row" id="fieldSubject">
+            <label for="cSubject">What's this about? *</label>
+            <select id="cSubject" name="subject" required>
+              <option value="">Choose one…</option>
+              <option>General question</option>
+              <option>Catering & events</option>
+              <option>Group / office order</option>
+              <option>Feedback</option>
+              <option>Something else</option>
+            </select>
+            <span class="form-error"></span>
+          </div>
+          <div class="form-row" id="fieldMessage">
+            <label for="cMessage">Message *</label>
+            <textarea id="cMessage" name="message" placeholder="Tell us what you need…" required></textarea>
+            <span class="form-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send Message</button>
+          <div class="form-success" id="contactSuccess" style="margin-top:1rem;justify-content:center;width:100%;">✓ Thanks! We'll be in touch shortly.</div>
+          <p class="form-note">Prefer email? Write to us directly at <a href="mailto:hello@marigoldsipco.example" style="text-decoration:underline;">hello@marigoldsipco.example</a>.</p>
+        </form>
+
+        <div class="map-frame">
+          <svg viewBox="0 0 600 220" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustrated map showing Marigold Sip Co. on Marigold Lane" style="width:100%;height:100%;">
+            <rect width="600" height="220" fill="#DCE6D3"/>
+            <path d="M0 150 L600 130" stroke="#FFFDF8" stroke-width="14"/>
+            <path d="M120 0 L160 220" stroke="#FFFDF8" stroke-width="10"/>
+            <path d="M420 0 L460 220" stroke="#FFFDF8" stroke-width="10"/>
+            <circle cx="300" cy="140" r="10" fill="#E88950"/>
+            <path d="M300 108c10 0 18 7 18 17 0 12-18 28-18 28s-18-16-18-28c0-10 8-17 18-17z" fill="#E88950"/>
+            <circle cx="300" cy="125" r="6" fill="#FFF8EC"/>
+            <text x="300" y="185" text-anchor="middle" font-family="sans-serif" font-size="13" fill="#4A3222" font-weight="700">214 Marigold Lane, Portland OR</text>
+          </svg>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head reveal">
+        <div class="stack text-center">
+          <span class="eyebrow">Good to know</span>
+          <h2>Frequently asked questions</h2>
+        </div>
+      </div>
+      <div class="faq-list" id="faqList">
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Can I customize a signature drink instead of building from scratch?<span class="plus"></span></button>
+          <div class="faq-a"><p>Absolutely — every signature drink can have its milk, sweetness or toppings adjusted at the counter, or you can start from it in the drink builder and tweak from there.</p></div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-q" aria-expanded="false">Do you offer dairy-free and caffeine-free options?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes. Oat, almond and coconut milk are available on every drink, and our fizzes, mocktails and herbal teas are naturally caffeine-free.</p></div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-q" aria-expanded="false">Can I order ahead for a group or office?<span class="plus"></span></button>
+          <div class="faq-a"><p>Definitely — build multiple drinks in our online builder, add each to your order, then send it to us through the contact form at least 2 hours ahead for pickup.</p></div>
+        </div>
+        <div class="faq-item reveal reveal-delay-3">
+          <button class="faq-q" aria-expanded="false">Do you cater private events?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes — we run a mobile drink bar for parties, weddings and corporate events with a curated or fully build-your-own menu. Reach out via the form above with your date and headcount.</p></div>
+        </div>
+        <div class="faq-item reveal">
+          <button class="faq-q" aria-expanded="false">Is parking available near the shop?<span class="plus"></span></button>
+          <div class="faq-a"><p>There's free two-hour street parking along Marigold Lane, plus a public lot one block south on 5th Avenue.</p></div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-q" aria-expanded="false">Can I bring my own reusable cup?<span class="plus"></span></button>
+          <div class="faq-a"><p>Yes, and we'll happily take 50 cents off your order for bringing one — every size up to 20oz works at the counter.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NEWSLETTER -->
+  <section class="section" id="newsletter">
+    <div class="container">
+      <div class="newsletter reveal">
+        <div class="stack-tight">
+          <span class="eyebrow">Stay in the loop</span>
+          <h2>New flavors land in your inbox first.</h2>
+          <p>One email a week: seasonal drops, builder combos worth trying, and the occasional free-topping code.</p>
+        </div>
+        <form class="newsletter-form" id="newsletterFormContact" novalidate>
+          <label style="position:absolute;left:-9999px;" for="newsletterEmailContact">Email address</label>
+          <input type="email" id="newsletterEmailContact" name="email" placeholder="you@email.com" required>
+          <button type="submit" class="btn btn-primary">Subscribe</button>
+          <div class="form-success" id="newsletterSuccessContact">✓ You're on the list!</div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand" style="color:var(--cream);">
+          <span class="brand-mark"><img src="images/logo-mark.svg" alt="" width="40" height="40"></span>
+          <span>Marigold<br><small style="color:var(--butter);">Sip Co.</small></span>
+        </a>
+        <p>Small-batch signature drinks and a build-your-own bar in the heart of Portland. Every cup made to order.</p>
+        <div class="social-row">
+          <a href="https://instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/social-instagram.svg" alt="" width="18" height="18"></a>
+          <a href="https://tiktok.com" target="_blank" rel="noopener" aria-label="TikTok"><img src="images/social-tiktok.svg" alt="" width="18" height="18"></a>
+          <a href="https://facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/social-facebook.svg" alt="" width="18" height="18"></a>
+          <a href="https://pinterest.com" target="_blank" rel="noopener" aria-label="Pinterest"><img src="images/social-pinterest.svg" alt="" width="18" height="18"></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="signature-drinks.html">Signature Drinks</a></li>
+          <li><a href="build-your-own.html">Build Your Own</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <ul>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="contact.html#faq">FAQ</a></li>
+          <li><a href="contact.html#catering">Catering & Events</a></li>
+          <li><a href="contact.html#newsletter">Newsletter</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Visit</h4>
+        <ul>
+          <li>214 Marigold Lane<br>Portland, OR 97209</li>
+          <li>Mon–Fri · 7am–7pm</li>
+          <li>Sat–Sun · 8am–7pm</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Marigold Sip Co. All rights reserved.</span>
+      <span><a href="contact.html">Privacy</a> · <a href="contact.html">Terms</a> · Built with care in Portland.</span>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast"></div>
+<script src="js/main.js"></script>
+</body>
+</html>
